@@ -1,0 +1,30 @@
+.head {
+    color: white;
+    background-color: #9cde7d;
+    height: 47px;
+    background: linear-gradient(to right, #6ad0ae, #9CDE7D); /* Современные браузеры */
+    /*fill: linear-gradient(260deg, #9CDE7D 13.86%, rgba(42, 189, 235, 0.54) 117.53%), linear-gradient(260deg, #9CDE7D 13.86%, rgba(42, 189, 235, 0.54) 117.53%), linear-gradient(260deg, #9CDE7D 13.86%, rgba(42, 189, 235, 0.54) 117.53%);*/
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.head a {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    text-align: right;
+}
+
+#blc1 {
+    background-color: #16153E;
+}
+
+#blc2 {
+    background-color: green;
+}
+
+#blc3 {
+    background-color: yellow;
+}
