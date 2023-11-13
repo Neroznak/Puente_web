@@ -1,30 +1,276 @@
+
+
 .head {
     color: white;
     background-color: #9cde7d;
     height: 47px;
-    background: linear-gradient(to right, #6ad0ae, #9CDE7D); /* Современные браузеры */
-    /*fill: linear-gradient(260deg, #9CDE7D 13.86%, rgba(42, 189, 235, 0.54) 117.53%), linear-gradient(260deg, #9CDE7D 13.86%, rgba(42, 189, 235, 0.54) 117.53%), linear-gradient(260deg, #9CDE7D 13.86%, rgba(42, 189, 235, 0.54) 117.53%);*/
+    background: linear-gradient(to right, #6ad0ae, #9CDE7D);
+    /*background: linear-gradient(to right, #2ABDEB, #4A6FF2);*/
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .head a {
+    margin-top: 25px;
+    padding-top: 40px;
     color: #000;
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
     text-decoration: none;
     text-align: right;
+    vertical-align: middle;
+
 }
 
-#blc1 {
+.blok {
+    background-image: url("office.jpg");
+    background-size: cover; /* Масштабирует изображение по размеру контейнера */
+    background-position: center; /* Выравнивает изображение по центру контейнера */
+    background-repeat: no-repeat; /* Запрещает повторение изображения */
+    height: 700px;
+}
+
+.opacity{
+    /*padding-top: 40px;*/
+    height: 100%;
+    width: 100%;
+    background: rgba(11, 11, 11, 0.55);
+    /*opacity: 0.55; !* Прозрачность элемента (от 0 до 1) *!*/
+}
+.lkkl {
+    margin-left: 10%;
+    /*margin-top: 10%;*/
+    padding-top: 8%;
+    width: 882px;
+    height: 234.625px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Impact;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-nero {
+    margin-left: 160px;
+    margin-top: 40px;
+    width: 142px;
+    height: 58px;
+    flex-shrink: 0;
+    background: linear-gradient(to right, #4AC6CC, #9CDE7D);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 15px;
+}
+
+.blc{
+    margin-top: 25%;
+    padding-bottom: 5%;
+    height: 40px;
+    color: #FFF;
+    text-align: center;
+    font-family: Impact;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 78.557px;
+    flex-shrink: 0;
+
+}
+.blc1 {
     background-color: #16153E;
 }
 
-#blc2 {
-    background-color: green;
+.blc1 p {
+    color: #56A3B4;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: normal;
 }
 
-#blc3 {
-    background-color: yellow;
+.blc2 {
+    margin-top: 15%;
+    color: #FFF;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: Roboto, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    height: 108px;
+    flex-shrink: 0;
+    width: 466px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #4A6FF2;
+}
+
+.comm1{
+    margin-top: 15%;
+    padding:15px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    width: 606px;
+    height: 118px;
+    flex-shrink: 0;
+    border-radius: 22px;
+    background: #F7F7F7;
+}
+
+.ner-blc {
+    margin-top: 4%;
+    width: 100%;
+    height: 324px;
+    flex-shrink: 0;
+    background: linear-gradient(to right, #4AC6CC, #9CDE7D);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nerd-blc {
+    margin-top: 14%;
+    margin-bottom: 14%;
+    width: 100%;
+    height: 224px;
+    flex-shrink: 0;
+    background: linear-gradient(to right, #4AC6CC, #9CDE7D);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nerd-blc img {
+    height: 300px;
+    width: 250px;
+    /*margin-bottom: 15px;*/
+    margin-top: 14%;
+    margin-left: 134%;
+}
+.nerd-blc h1{
+    color: #000;
+    margin-bottom: 50%;
+    font-weight: lighter !important;
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    line-height: normal;
+    width: 500px !important;
+}
+
+.nerd-blc h2{
+    color: #000;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: normal;
+    width: 500px !important;
+
+}
+.ner-blc h3 {
+    padding: 35px;
+    margin-bottom: 2%;
+    width: 1231px;
+    height: 76px;
+    text-align: center;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.whitblc{
+    width: 158px;
+    margin-left: 3%;
+    height: 175px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+}
+.whitblc h1 {
+    color: #71B153;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 100 !important;
+    line-height: normal;
+}
+
+.whitblc h4 {
+    color: #000;
+    text-align: left;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.detals {
+    margin-top: 5%;
+    width: 605px;
+    height: 90px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.tarifs h1 {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.trf-1  {
+    margin-left: 6%;
+    width: 343px;
+    height: 388px;
+    flex-shrink: 0;
+    background: linear-gradient(to right, #2ABDEB, #4A6FF2);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+    color: whitesmoke;
+}
+
+.trf-1 h1 {
+    text-align: center;
+}
+
+.footr {
+    height: 60px;
+    flex-shrink: 0;
+    margin-top: 100px;
+    background: linear-gradient(to right, #4AC6CC, #9CDE7D);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footr p {
+    margin-top: 25px;
 }
