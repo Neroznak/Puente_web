@@ -1,26 +1,25 @@
 .head {
     color: white;
-    background-color: #9cde7d;
     height: 47px;
     background: linear-gradient(to right, #6ad0ae, #9CDE7D);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/*body {*/
-/*    font-family: "Roboto Th", serif;*/
-/*}*/
-
 
 .up-btn {
     margin-top: 1%;
     text-align: right;
-    padding-left: 80%;
+    /*padding-left: 80%;*/
     text-decoration: none;
+    color: white !important;
+    font-family: "Roboto Th", sans-serif;
+    font-weight: 400;
 }
 
 .lf-btn {
-    margin-left: 15%;
-    padding-left: 15%;
+    /*margin-left: 15%;*/
+    /*padding-left: 15%;*/
+
 }
 
 
@@ -312,16 +311,19 @@
 }
 .blc-info1 {
     margin-top: 1%;
+    font-family: "Roboto Th", sans-serif;
 }
 
 .blc-info2 {
     margin-top: 5%;
+    font-family: "Roboto Th", sans-serif;
+
 }
 
 .txt {
     color: #000;
     /*margin-top: 2%;*/
-/*    font-family: Roboto, SansSerif;*/
+    font-family: "Roboto Th", SansSerif;
     font-size: 18px;
     font-style: normal;
     font-weight: 200;
@@ -335,19 +337,19 @@
 }
 
 .kub {
-    width: 143px;
+    width: 48px;
     height: 52px;
     flex-shrink: 0;
     padding-top: 15px;
-    padding-left: 10px;
+    padding-left: 80px;
     margin-top: 12%;
-    /*background-color: #4A6FF2;*/
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    /*background: linear-gradient(to right, #4AC6CC, #9CDE7D);*/
-    background: linear-gradient(to right, #2ABDEB, #4A6FF2);
+    background: linear-gradient(to right, #6ad0ae, #9CDE7D);
+    /*background: linear-gradient(to right, #2ABDEB, #4A6FF2);*/
     border-radius: 15px;
     overflow: visible;
     white-space: nowrap;
+    font-family: "Roboto Th", sans-serif;
 
 }
 
@@ -383,7 +385,7 @@
 .footr {
     height: 60px;
     flex-shrink: 0;
-    margin-top: 100px;
+    margin-top: 25px;
     background: linear-gradient(to right, #4AC6CC, #9CDE7D);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     color: #FFF;
@@ -404,3 +406,28 @@
     src: url('Roboto-Thin.ttf') format('ttf');
     /* Дополнительные форматы могут быть добавлены здесь для лучшей совместимости */
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: red !important;
+}
+
+th, td {
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+th, td {
+    border: 1px solid transparent;
+}
+
