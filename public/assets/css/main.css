@@ -1,8 +1,9 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 98vh; /* Это гарантирует, что контейнер займет как минимум 100% высоты видимой области */
+    min-height: 100vh; /* Это гарантирует, что контейнер займет как минимум 100% высоты видимой области */
     margin: 0;
+
 }
 
 
@@ -57,6 +58,27 @@ body {
 
 .pic {
     width:100%;
+}
+
+.errorText {
+    display: flex;
+    margin-top: 15%;
+    margin-left: 25%;
+    text-align: left;
+    font-size: 50px;
+    font-family: "Roboto Light", sans-serif;
+
+}
+
+.small_error_text {
+    display: flex;
+    /*margin-top: 15%;*/
+    margin-left: 25%;
+    text-align: left;
+    font-size: 25px;
+    font-family: "Roboto Light", sans-serif;
+
+
 }
 
 
@@ -116,6 +138,7 @@ h3 {
 
 .height {
     height: 300px;
+    margin-top: 5%;
 }
 
 .info-table {
@@ -126,6 +149,7 @@ h3 {
 
 .width-90-table {
     width: 90%;
+    margin-bottom: 5%;
 }
 
 .full-page {
@@ -247,6 +271,9 @@ footer {
     font-family: "Roboto Light", sans-serif;
     text-align: center;
     font-size: 16px;
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    width: 100%;
 }
 
 

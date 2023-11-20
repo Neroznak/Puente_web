@@ -8,7 +8,7 @@ class Pages extends BaseController
 {
     public function index()
     {
-        return view('lending/lending');
+        return view('start');
     }
 
     public function view($page = 'home')
@@ -25,3 +25,5 @@ class Pages extends BaseController
             . view('templates/footer');
     }
 }
+
+//php spark serve
