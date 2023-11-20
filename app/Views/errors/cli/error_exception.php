@@ -2,7 +2,7 @@
 
 use CodeIgniter\CLI\CLI;
 
-// The main Exception
+// The pages Exception
 CLI::newLine();
 CLI::write('[' . get_class($exception) . ']', 'light_gray', 'red');
 CLI::newLine();

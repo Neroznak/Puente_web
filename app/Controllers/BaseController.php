@@ -22,7 +22,7 @@ use Psr\Log\LoggerInterface;
 abstract class BaseController extends Controller
 {
     /**
-     * Instance of the main Request object.
+     * Instance of the pages Request object.
      *
      * @var CLIRequest|IncomingRequest
      */
