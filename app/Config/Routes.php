@@ -1,6 +1,7 @@
 <?php
 
-use App\Controllers\News;
+
+use App\Controllers\Projects;
 use CodeIgniter\Router\RouteCollection;
 use App\Controllers\Pages;
 
@@ -10,11 +11,12 @@ use App\Controllers\Pages;
  */
 
 
-$routes->get('pages', [Home::class, 'index']);
-
-
-//$routes->get('news', [News::class, 'index']);
-//$routes->get('news/(:segment)', [News::class, 'show']);
-//
+$routes->setDefaultController('start'); // Устанавливаем дефолтный контроллер
 //$routes->get('pages', [Pages::class, 'index']);
-//$routes->get('(:segment)', [Pages::class, 'view']);
+//$routes->get('projects', [Projects::class, 'view']);
+//$routes->get('add_project', [Projects::class, 'view']);
+//$routes->get('home', [Pages::class, 'view']);
+//$routes->get('tasks', [Pages::class, 'view']);
+//$routes->get('employers', [Pages::class, 'view']);
+$routes->get('(:segment)', [Pages::class, 'view']);
+//$routes->get('(:segment)', [Projects::class, 'view']);

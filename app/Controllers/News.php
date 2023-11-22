@@ -7,17 +7,17 @@ use CodeIgniter\Exceptions\PageNotFoundException;
 
 class News extends BaseController
 {
-    public function index()
+    public function index(): string
     {
         $model = model(NewsModel::class);
 
         $data = [
             'news'  => $model->getNews(),
-            'title' => 'news archive',
+            'title' => 'Членистоногое',
         ];
 
-        return view('templates/header', $data)
-            . view('news/index', $data)
+        return view('templates/header')
+            . view('pages/home', $data)
             . view('templates/footer');
     }
 
@@ -36,7 +36,7 @@ class News extends BaseController
         $data['title'] = $data['news']['title'];
 
         return view('templates/header', $data)
-            . view('news/view')
+            . view('news/view', $data['news'])
             . view('templates/footer');
     }
 }

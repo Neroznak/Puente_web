@@ -90,19 +90,15 @@
                         <table>
                             <thead>
                             <tr>
-                                <th class="table-start table-stop">Общие задачи</th>
+                                <th class="table-start table-stop"><?= esc($task_title) ?></th>
                             </tr>
                             </thead>
                             <tbody>
+                            <?php foreach ($task as $task_item): ?>
                             <tr>
-                                <td>Поиск новых Заказчиков</td>
+                                <td><?= esc($task_item['body']) ?></td>
                             </tr>
-                            <tr>
-                                <td>Повышение KPI</td>
-                            </tr>
-                            <tr>
-                                <td>Повышение производительности труда</td>
-                            </tr>
+                            <?php endforeach ?>
                             </tbody>
                         </table>
                     </aside>
@@ -111,25 +107,16 @@
                         <table id="productTable">
                             <thead>
                             <tr>
-                                <th class="table-start table-stop">Новости</th>
+                                <th class="table-start table-stop"><?= esc($news_title) ?></th>
                             </tr>
                             </thead>
-                            <tbody></tbody>
-                            <tr>
-                                <td>Наша фирма внедряет автоматизированную систему контроля Puente!</td>
-                            </tr>
-                            <tr>
-                                <td>24 мая - крайний срок по выполнению: Лапино Гарден, благоустройство</td>
-                            </tr>
-                            <tr>
-                                <td>12 июня заканчивается действие договора с КонтейнерСервисом</td>
-                            </tr>
-                            <tr>
-                                <td>15 июня состоится тендер за проект: АШАН Мытищи</td>
-                            </tr>
-                            <tr>
-                                <td>21 июня пройдёт совещание всех сотрудников ООО Триумвират</td>
-                            </tr>
+                            <tbody>
+                            <?php foreach ($news as $news_item): ?>
+                                <tr>
+                                    <td><?= esc($news_item['body']) ?></td>
+                                </tr>
+                            <?php endforeach ?>
+                            </tbody>
                         </table>
                     </aside>
                 </div>

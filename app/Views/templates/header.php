@@ -23,18 +23,20 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 header">
-                <nav class="col-lg-11 white-text">
-                    <a class="nav-item active" href="http://localhost:8080/home">Главная</a>
-                    <a class="nav-item" href="http://localhost:8080/projects">Проекты</a>
-                    <a class="nav-item" href="http://localhost:8080/tasks">Задачи</a>
-                    <a class="nav-item" href="http://localhost:8080/employers">Сотрудники</a>
-                    <a class="nav-item" href="http://localhost:8080/404">Техника</a>
-                    <a class="nav-item" href="http://localhost:8080/404">Контрагенты</a>
-                </nav>
-                <div>
-                    <div class="white-text">
-                        <p>TRIUMVIRATE</p></div>
-                </div>
+<!--                <div class="container">-->
+                    <nav class="col-lg-11 white-text">
+                        <a class="nav-item active" href="http://localhost:8080/home">Главная</a>
+                        <a class="nav-item" href="http://localhost:8080/projects">Проекты</a>
+                        <a class="nav-item" href="http://localhost:8080/tasks">Задачи</a>
+                        <a class="nav-item" href="http://localhost:8080/employers">Сотрудники</a>
+                        <a class="nav-item" href="http://localhost:8080/start">Техника</a>
+                        <a class="nav-item" href="http://localhost:8080/404">Контрагенты</a>
+                    </nav>
+                    <div>
+                        <div class="white-text">
+                            <p>TRIUMVIRATE</p></div>
+                    </div>
+<!--                </div>-->
             </div>
         </div>
 </header>
