@@ -14,7 +14,7 @@
 <div class="head col-lg-12">
     <div class="container">
         <div class="up-btn">
-            <a class="lf-btn" href="/">Войти</a>
+            <a class="lf-btn" href="http://localhost:8080/home">Войти</a>
             <a href="/">Регистрация</a>
         </div>
     </div>

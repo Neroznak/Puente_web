@@ -11,8 +11,9 @@
     },
     "require": {
         "php": "^7.4 || ^8.0",
-        "codeigniter4/framework": "^4.0",
-      "ext-mysqli": "*"
+        "ext-mysqli": "*",
+        "benedmunds/codeigniter-ion-auth": "4.x-dev",
+        "codeigniter4/framework": "^4.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9",
@@ -36,5 +37,12 @@
     },
     "scripts": {
         "test": "phpunit"
+    },
+    "minimum-stability": "dev",
+    "repositories": {
+        "ionAuth": {
+            "type": "vcs",
+            "url": "git@github.com:benedmunds/CodeIgniter-Ion-Auth.git"
+        }
     }
 }

@@ -37,7 +37,7 @@
                                 <?php foreach ($project_prepare as $project_item) : ?>
                                     <tr>
                                         <td><?= esc($project_item['customer']); ?></td>
-                                        <td><?= esc($project_item['project']); ?></td>
+                                        <td><a href="http://localhost:8080/project_page"><?= esc($project_item['project']); ?></a></td>
                                         <td><?= esc($project_item['date_start']); ?></td>
                                         <td><?= esc($project_item['date_finish']); ?></td>
                                         <td><?= esc($project_item['total']);
