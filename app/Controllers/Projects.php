@@ -28,7 +28,7 @@ class Projects extends BaseController
             'project_completed'  => $projects->getProjectCompleted(),
             'title' => 'Проекты'];
 
-        return view('templates/header')
+        return view('templates/header', $data)
             . view('projects/' . $page, $data)
             . view('templates/footer');
     }
@@ -49,7 +49,7 @@ class Projects extends BaseController
             'project_completed'  => $projects->getProjectCompleted(),
             'title' => 'Новый проект'];
 
-        return view('templates/header')
+        return view('templates/header', $data)
             . view('projects/' . $page, $data)
             . view('templates/footer');
     }
@@ -69,7 +69,7 @@ class Projects extends BaseController
             'project_completed'  => $projects->getProjectCompleted(),
             'title' => 'Рябиновая']; // из базы брать потом
 
-        return view('templates/header')
+        return view('templates/header', $data)
             . view('projects/' . $page, $data)
             . view('templates/footer');
     }

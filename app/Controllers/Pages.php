@@ -30,7 +30,7 @@ class Pages extends BaseController
             'task_title' => 'Общие задачи',
             'title'=>'Главная'];
 
-        return view('templates/header')
+        return view('templates/header', $data)
             . view('pages/' . $page, $data)
             . view('templates/footer');
     }
@@ -48,7 +48,7 @@ class Pages extends BaseController
         $data = [
             'title'=>'Задачи'];
 
-        return view('templates/header')
+        return view('templates/header', $data)
             . view('pages/' . $page, $data)
             . view('templates/footer');
     }
@@ -66,7 +66,7 @@ class Pages extends BaseController
         $data = [
             'title'=>'Сотрудники'];
 
-        return view('templates/header')
+        return view('templates/header', $data)
             . view('pages/' . $page, $data)
             . view('templates/footer');
     }
@@ -84,7 +84,7 @@ class Pages extends BaseController
         $data = [
             'title'=>'404'];
 
-        return view('templates/header')
+        return view('templates/header', $data)
             . view('pages/' . $page, $data)
             . view('templates/footer');
     }

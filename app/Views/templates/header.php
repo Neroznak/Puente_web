@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
-    <title><?php $title?></title>
+    <title><?= esc($title) ?></title>
 
 </head>
 
