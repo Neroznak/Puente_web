@@ -36,7 +36,7 @@ $routes->get('tasks', [Pages::class, 'view_tasks']);
 $routes->get('employers', [Pages::class, 'view_employers']);
 $routes->get('add_project', [Projects::class, 'view']);
 $routes->get('project_page', [Projects::class, 'view_project']);
-$routes->get('404', [Pages::class, 'view']);
+$routes->get('404', [Pages::class, 'view_404']);
 $routes->get('start', [Pages::class, 'view']);
 $routes->get('log', [AuthController::class, 'login']);
 

@@ -14,8 +14,8 @@
 <div class="head col-lg-12">
     <div class="container">
         <div class="up-btn">
-            <a class="lf-btn" href="http://localhost:8080/home">Войти</a>
-            <a href="/">Регистрация</a>
+            <a class="lf-btn" href="http://puente.tw1.ru/home">Войти</a>
+            <a href="http://puente.tw1.ru/log">Регистрация</a>
         </div>
     </div>
 </div>

@@ -25,12 +25,12 @@
             <div class="col-lg-12 header">
 <!--                <div class="container">-->
                     <nav class="col-lg-11 white-text">
-                        <a class="nav-item active" href="http://localhost:8080/home">Главная</a>
-                        <a class="nav-item" href="http://localhost:8080/projects">Проекты</a>
-                        <a class="nav-item" href="http://localhost:8080/tasks">Задачи</a>
-                        <a class="nav-item" href="http://localhost:8080/employers">Сотрудники</a>
-                        <a class="nav-item" href="http://localhost:8080/start">Техника</a>
-                        <a class="nav-item" href="http://localhost:8080/404">Контрагенты</a>
+                        <a class="nav-item active" href="http://puente.tw1.ru/home">Главная</a>
+                        <a class="nav-item" href="http://puente.tw1.ru/projects">Проекты</a>
+                        <a class="nav-item" href="http://puente.tw1.ru/tasks">Задачи</a>
+                        <a class="nav-item" href="http://puente.tw1.ru/employers">Сотрудники</a>
+                        <a class="nav-item" href="http://puente.tw1.ru/404">Техника</a>
+                        <a class="nav-item" href="http://puente.tw1.ru/404">Контрагенты</a>
                     </nav>
                     <div>
                         <div class="white-text">
