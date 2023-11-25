@@ -25,7 +25,7 @@
 
 
 .blok {
-    background-image: url("office.jpg");
+    background-image: url('/assets/img/office.jpg'); /* Путь к изображению */
     background-size: cover; /* Масштабирует изображение по размеру контейнера */
     background-position: center; /* Выравнивает изображение по центру контейнера */
     background-repeat: no-repeat; /* Запрещает повторение изображения */
@@ -403,7 +403,7 @@
 
 @font-face {
     font-family: 'Roboto Th';
-    src: url('Roboto-Thin.ttf') format('ttf');
+    src: url('../fonts/Roboto-Thin.ttf') format('ttf');
     /* Дополнительные форматы могут быть добавлены здесь для лучшей совместимости */
 }
 

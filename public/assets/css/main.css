@@ -5,7 +5,13 @@ body {
     margin: 0;
 
 }
-
+/*body {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    height: 100vh;*/
+/*    margin: 0;*/
+/*}*/
 
 .header {
     background: linear-gradient(to right, #6ad0ae, #9CDE7D);

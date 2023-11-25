@@ -27,7 +27,8 @@ class Pages extends BaseController
             'news'  => $news->getNews(),
             'news_title' => 'Новости',
             'task' => $tasks->getTask(),
-            'task_title' => 'Общие задачи'];
+            'task_title' => 'Общие задачи',
+            'title'=>'Главная'];
 
         return view('templates/header')
             . view('pages/' . $page, $data)
@@ -45,10 +46,7 @@ class Pages extends BaseController
         $tasks = model(GeneralTasksModel::class);
 
         $data = [
-            'news'  => $news->getNews(),
-            'news_title' => 'Новости',
-            'task' => $tasks->getTask(),
-            'task_title' => 'Общие задачи'];
+            'title'=>'Задачи'];
 
         return view('templates/header')
             . view('pages/' . $page, $data)
@@ -66,10 +64,7 @@ class Pages extends BaseController
         $tasks = model(GeneralTasksModel::class);
 
         $data = [
-            'news'  => $news->getNews(),
-            'news_title' => 'Новости',
-            'task' => $tasks->getTask(),
-            'task_title' => 'Общие задачи'];
+            'title'=>'Сотрудники'];
 
         return view('templates/header')
             . view('pages/' . $page, $data)
@@ -87,10 +82,7 @@ class Pages extends BaseController
         $tasks = model(GeneralTasksModel::class);
 
         $data = [
-            'news'  => $news->getNews(),
-            'news_title' => 'Новости',
-            'task' => $tasks->getTask(),
-            'task_title' => 'Общие задачи'];
+            'title'=>'404'];
 
         return view('templates/header')
             . view('pages/' . $page, $data)

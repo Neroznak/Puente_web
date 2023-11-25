@@ -52,4 +52,13 @@ public function logout()
 
         return redirect()->to('/');
     }
+
+
+    public function forgot($page = 'forgotpassword') {
+         return view('auth/' . $page);
+    }
+
+    public function registration($page = 'registration') {
+        return view('auth/' . $page);
+    }
 }

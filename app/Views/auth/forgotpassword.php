@@ -21,36 +21,32 @@
 <div class="mega-block">
 
     <div class="login-form">
-        <h2>Вход в систему</h2>
+        <h2>Восстановление пароля</h2>
 
         <?php if (isset($error)): ?>
             <div style="color: red;"><?php echo $error; ?></div>
         <?php endif; ?>
 
-        <?php echo form_open('login'); ?>
+<!--        --><?php //echo form_open('login'); ?>
         <label for="username">Имя пользователя:</label>
         <input class="input-nero" type="text" name="username" required>
 
         <br>
 
-        <label for="password">Пароль:</label>
-        <input class="input-nero" type="password" name="password" required>
 
         <br>
         <a href="/home">
-        <button type="submit" class="go_button">Вход</button></a>
-        <?php echo form_close(); ?>
-        <div class="vid">
-            <div class="half text-left"><p><a href="/forgot_password">Забыли пароль?</a></p></div>
-            <div class="half text-right"><p><a href="/registration">Регистрация</a></p></div>
+            <button type="submit" class="go_button">Восстановить пароль</button>
+        </a>
+<!--        --><?php //echo form_close(); ?>
+
+
     </div>
 
-</div>
-
-<!--<footer>-->
-<!--    <div class="container-fluid header">-->
-<!--        <p>Designed by Neroznak studio</p>-->
-<!--    </div>-->
-<!--</footer>-->
+    <!--<footer>-->
+    <!--    <div class="container-fluid header">-->
+    <!--        <p>Designed by Neroznak studio</p>-->
+    <!--    </div>-->
+    <!--</footer>-->
 </body>
 </html>

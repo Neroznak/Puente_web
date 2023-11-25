@@ -7,12 +7,12 @@
                     <div class="col-lg-11 margin">
                         <div class="row justify-content-between">
                             <div class="col-auto">
-                                <h1><?= esc($project_title) ?></h1></div>
+                                <h1><?= esc($title) ?></h1></div>
                             <div class="col-auto">
-                                <a href="http://puente.tw1.ru/add_project"><button>
+                                <a href="/add_project">
+                                    <button class="add_project_button">
                                         Добавить новый объект
                                     </button></a>
-                                <input type="submit" class="add_project_button" value="Добавить новый объект">
                             </div>
                         </div>
                     </div>

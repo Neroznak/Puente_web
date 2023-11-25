@@ -14,8 +14,8 @@
 <div class="head col-lg-12">
     <div class="container">
         <div class="up-btn">
-            <a class="lf-btn" href="http://puente.tw1.ru/log">Войти</a>
-            <a href="http://puente.tw1.ru/home">Регистрация</a>
+            <a class="lf-btn" href="/login">Войти</a>
+            <a href="/registration">Регистрация</a>
         </div>
     </div>
 </div>
@@ -25,7 +25,7 @@
     <div class="opacity">
         <div class="container">
             <div class="lkkl">Облачная система контроля за строительной организацией
-                <input type="submit" class="btn btn-nero" value="Начать сейчас" >
+                <a href="/login"><button class="btn btn-nero">Начать сейчас</button></a>
             </div>
         </div>
     </div>
@@ -50,19 +50,19 @@
             </div>
             <div class="comm1">
                 <h4>Достигайте амбициозных целей с помощью простой системы</h4>
-                <img src="./assets/css/galochka.png" alt="Галочка">
+                <img src="assets/img/galochka.png" alt="Галочка">
             </div>
             <div class="comm1">
                 <h4>Быстрые и грамотные решения снижают стоимость строительства</h4>
-                <img src="./assets/css/galochka.png" alt="Галочка">
+                <img src="assets/img/galochka.png" alt="Галочка">
             </div>
             <div class="comm1">
                 <h4>Уберём бюрократию, оставим только автоматизированный контроль!</h4>
-                <img src="./assets/css/galochka.png" alt="Галочка">
+                <img src="assets/img/galochka.png" alt="Галочка">
             </div>
         </div>
         <div class="page2-right col-lg-2 col-lg-push-5">
-            <img src="./assets/css/erp.png" alt="Схема"></div>
+            <img src="assets/img/erp.png" alt="Схема"></div>
     </div>
 </div>
 
@@ -115,9 +115,9 @@
             <hr>
             <div class="detals col-lg-12"><h4 class="text-right">Цели достигаются быстрее, если они встроены в систему
                     контроля</h4>
-                <img class="col-lg-4" src="./assets/css/sp.png" alt="Настройки цели">
+                <img class="col-lg-4" src="assets/img/sp.png" alt="Настройки цели">
                 <div class="txt col-lg-4 col-lg-push-2">
-                        <div class="kub">Анализ проектов на соответствие общим целям</div>
+                    <div class="kub">Анализ проектов на соответствие общим целям</div>
                     <div class="kub"> Советы по достижению целей</div>
                     <div class="kub">Наглядная статистика, адаптированная под цели</div>
                     <div class="kub">Прогноз достижения целей</div>
@@ -129,7 +129,7 @@
             <hr>
             <div class="detals col-lg-12"><h4 class="text-left">Гораздо больше, чем «проекты, которые заботятся сами о
                     себе»</h4>
-                <img class="col-lg-6 col-lg-push-6" src="./assets/css/kp.png" alt="КП">
+                <img class="col-lg-6 col-lg-push-6" src="assets/img/kp.png" alt="КП">
                 <div class="txt col-lg-4 col-lg-pull-6">
                     <div class="kub">Информативная и удобная панель управления</div>
                     <div class="kub">Авторекомендация по закупкам материала</div>
@@ -143,7 +143,7 @@
             <hr>
             <div class="detals col-lg-12"><h4 class="text-right">Повышайте эффективность
                     работы Ваших сотрудников</h4>
-                <img class="col-lg-6" src="./assets/css/sotrudniki.png" alt="КП">
+                <img class="col-lg-6" src="assets/img/sotrudniki.png" alt="КП">
                 <div class="txt col-lg-4 col-lg-push-2">
                     <div class="kub">Удобное распределение задачи внутри отделов</div>
                     <div class="kub">Эффективный контроль за KPI</div>
@@ -158,7 +158,7 @@
             <hr>
             <div class="detals col-lg-12"><h4 class="text-left">Автоматизм в управлении ресурсами с нашим
                     приложением</h4>
-                <img class="col-lg-6 col-lg-push-6" src="./assets/css/documents.png" alt="КП">
+                <img class="col-lg-6 col-lg-push-6" src="assets/img/documents.png" alt="КП">
                 <div class="txt col-lg-4 col-lg-pull-6">
                     <div class="kub">Автоподбор оптимальных контрагентов</div>
                     <div class="kub">Контроль за ресурсами предприятия</div>
@@ -173,7 +173,7 @@
             <hr>
             <div class="detals col-lg-12"><h4 class="text-right">Вся история взаимодействия с контрагентом на одной
                     странице!</h4>
-                <img class="col-lg-6" src="./assets/css/kontragenti.png" alt="КП">
+                <img class="col-lg-6" src="assets/img/kontragenti.png" alt="КП">
                 <div class="txt col-lg-4 col-lg-push-2">
                     <div class="kub">Удобная панель взаимодействия</div>
                     <div class="kub">Прогноз поведения</div>
@@ -187,7 +187,7 @@
             <hr>
             <div class="detals col-lg-12"><h4 class="text-left">Составляйте документы в своих интересах
                     автоматически</h4>
-                <img class="col-lg-6 col-lg-push-6" src="./assets/css/dogovori.png" alt="КП">
+                <img class="col-lg-6 col-lg-push-6" src="assets/img/dogovori.png" alt="КП">
                 <div class="txt col-lg-4 col-lg-pull-6">
                     <div class="kub">Редактор договоров и соглашений</div>
                     <div class="kub">Советы по качественным формулировкам</div>
@@ -202,7 +202,7 @@
 <div class="col-lg-12 nerd-blc">
     <div class="container">
         <div class="col-lg-1">
-            <img src="./assets/css/man.png" alt="гендир"></div>
+            <img src="assets/img/man.png" alt="гендир"></div>
         <div class="text-left col-lg-1 col-lg-push-3">
             <h1>Благодаря Puente вся компания говорит на одном языке.</h1>
             <h2>Dmitrii Neroznak</h2>
