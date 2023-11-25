@@ -9,7 +9,7 @@
                             <div class="col-auto">
                                 <h1><?= esc($project_title) ?></h1></div>
                             <div class="col-auto">
-                                <a href="http://localhost:8080/add_project"><button>
+                                <a href="http://puente.tw1.ru/add_project"><button>
                                         Добавить новый объект
                                     </button></a>
                                 <input type="submit" class="add_project_button" value="Добавить новый объект">
@@ -37,7 +37,7 @@
                                 <?php foreach ($project_prepare as $project_item) : ?>
                                     <tr>
                                         <td><?= esc($project_item['customer']); ?></td>
-                                        <td><a href="http://localhost:8080/project_page"><?= esc($project_item['project']); ?></a></td>
+                                        <td><a href="http://puente.tw1.ru/project_page"><?= esc($project_item['project']); ?></a></td>
                                         <td><?= esc($project_item['date_start']); ?></td>
                                         <td><?= esc($project_item['date_finish']); ?></td>
                                         <td><?= esc($project_item['total']);
