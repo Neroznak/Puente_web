@@ -14,8 +14,8 @@
 <div class="head col-lg-12">
     <div class="container">
         <div class="up-btn">
-            <a class="lf-btn" href="http://puente.tw1.ru/home">Войти</a>
-            <a href="http://puente.tw1.ru/log">Регистрация</a>
+            <a class="lf-btn" href="http://puente.tw1.ru/log">Войти</a>
+            <a href="http://puente.tw1.ru/home">Регистрация</a>
         </div>
     </div>
 </div>
@@ -29,7 +29,7 @@
     <div class="opacity">
         <div class="container">
             <div class="lkkl">Облачная система контроля за строительной организацией
-                <input type="submit" class="btn btn-nero" value="Начать сейчас">
+                <input type="submit" class="btn btn-nero" value="Начать сейчас" >
             </div>
         </div>
     </div>
