@@ -26,10 +26,10 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => 'localhost',
-        'username'     => '',
-        'password'     => '',
-        'database'     => '',
+        'hostname'     => 'vh426.timeweb.ru',
+        'username'     => 'cy31930_puente',
+        'password'     => 'Nero00900',
+        'database'     => 'cy31930_puente',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
