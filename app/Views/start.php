@@ -25,7 +25,9 @@
     <div class="opacity">
         <div class="container">
             <div class="lkkl">Облачная система контроля за строительной организацией
-                <a href="/login"><button class="btn btn-nero">Начать сейчас</button></a>
+                <a href="/home">
+                    <button class="btn btn-nero">Смотреть портал</button>
+                </a>
             </div>
         </div>
     </div>
@@ -89,7 +91,7 @@
             </div>
             <div class="whitblc col-lg-1">
                 <h1>РК</h1>
-                <h4>Работа с контрагентами</h4>
+                <h4>Контрагенты</h4>
             </div>
             <div class="whitblc col-lg-1">
                 <h1>УЗ</h1>
@@ -107,97 +109,289 @@
     </div>
 </div>
 
-<div class="col-lg-12">
+<div class="col-lg-12 roboto">
     <div class="container">
         <h1 class="text-center">Поговорим о деталях</h1>
 
-        <div class="blc-info1 col-lg-12">
+        <div class="col-lg-12">
             <hr>
-            <div class="detals col-lg-12"><h4 class="text-right">Цели достигаются быстрее, если они встроены в систему
-                    контроля</h4>
-                <img class="col-lg-4" src="assets/img/sp.png" alt="Настройки цели">
-                <div class="txt col-lg-4 col-lg-push-2">
-                    <div class="kub">Анализ проектов на соответствие общим целям</div>
-                    <div class="kub"> Советы по достижению целей</div>
-                    <div class="kub">Наглядная статистика, адаптированная под цели</div>
-                    <div class="kub">Прогноз достижения целей</div>
-                </div>
-            </div>
-        </div>
+            <h4 class="text-right bold">Цели достигаются быстрее, если они встроены в систему контроля</h4>
+            <div class="container col-lg-12">
+                <img class=" col-lg-4" src="assets/img/sp.png" alt="Настройки цели">
+                <div class="container col-lg-8">
 
-        <div class="blc-info2 col-lg-12">
-            <hr>
-            <div class="detals col-lg-12"><h4 class="text-left">Гораздо больше, чем «проекты, которые заботятся сами о
-                    себе»</h4>
-                <img class="col-lg-6 col-lg-push-6" src="assets/img/kp.png" alt="КП">
-                <div class="txt col-lg-4 col-lg-pull-6">
-                    <div class="kub">Информативная и удобная панель управления</div>
-                    <div class="kub">Авторекомендация по закупкам материала</div>
-                    <div class="kub">Автосоставление исполнительной документации</div>
-                    <div class="kub">Планирование ресурсов строительства</div>
-                </div>
-            </div>
-        </div>
+                    <div class="container col-lg-12 pluses padding-top-8">
+                        <div class="col-lg-4">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Анализ проектов на соответствие общим целям</div>
+                    </div>
 
-        <div class="blc-info2 col-lg-12">
-            <hr>
-            <div class="detals col-lg-12"><h4 class="text-right">Повышайте эффективность
-                    работы Ваших сотрудников</h4>
-                <img class="col-lg-6" src="assets/img/sotrudniki.png" alt="КП">
-                <div class="txt col-lg-4 col-lg-push-2">
-                    <div class="kub">Удобное распределение задачи внутри отделов</div>
-                    <div class="kub">Эффективный контроль за KPI</div>
-                    <div class="kub">Справедливая кадровая политика</div>
-                    <div class="kub">Поручения больше не будут забыты</div>
-                </div>
-            </div>
-        </div>
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Советы по достижению целей</div>
+                    </div>
 
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Наглядная статистика, адаптированная под цели</div>
+                    </div>
 
-        <div class="blc-info2 col-lg-12">
-            <hr>
-            <div class="detals col-lg-12"><h4 class="text-left">Автоматизм в управлении ресурсами с нашим
-                    приложением</h4>
-                <img class="col-lg-6 col-lg-push-6" src="assets/img/documents.png" alt="КП">
-                <div class="txt col-lg-4 col-lg-pull-6">
-                    <div class="kub">Автоподбор оптимальных контрагентов</div>
-                    <div class="kub">Контроль за ресурсами предприятия</div>
-                    <div class="kub">Закупки включенные в систему бухгалтерии</div>
-                    <div class="kub">Не теряйте оптимальных поставщиков</div>
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Прогноз достижения целей</div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
 
-        <div class="blc-info2 col-lg-12">
+        <div class="col-lg-12 margin-top-5">
             <hr>
-            <div class="detals col-lg-12"><h4 class="text-right">Вся история взаимодействия с контрагентом на одной
-                    странице!</h4>
-                <img class="col-lg-6" src="assets/img/kontragenti.png" alt="КП">
-                <div class="txt col-lg-4 col-lg-push-2">
-                    <div class="kub">Удобная панель взаимодействия</div>
-                    <div class="kub">Прогноз поведения</div>
-                    <div class="kub">Взаимоучёт количественных величин</div>
-                    <div class="kub">Система рейтинговой оценки контрагента</div>
+            <h4 class="text-left bold">Гораздо больше, чем «проекты, которые заботятся сами о
+                себе»</h4>
+            <div class="container col-lg-12">
+                <div class="container col-lg-6 ">
+
+                    <div class="container col-lg-12 pluses  padding-top-8">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2 ">Информативная и удобная панель управления</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Авторекомендация по закупкам материала</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Автосоставление исполнительной документации</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Планирование ресурсов строительства</div>
+                    </div>
+
+                </div>
+                <div class="padding-top-2 col-lg-6">
+                    <img src="assets/img/kp.png" width="500" height="325" alt="КП"></div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-12 margin-top-5">
+            <hr>
+            <h4 class="text-right bold">Повышайте эффективность
+                работы Ваших сотрудников</h4>
+            <div class="container col-lg-12">
+                <div class="padding-top-2 col-lg-6">
+                    <img src="assets/img/sotrudniki.png" width="500" height="325" alt="Сотрудники"></div>
+                <div class="container col-lg-6 ">
+
+                    <div class="container col-lg-12 pluses  padding-top-8">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2 ">Удобное распределение задачи внутри отделов</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Эффективный контроль за KPI</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Справедливая кадровая политика</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Поручения больше не будут забыты</div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
-        <div class="blc-info2 col-lg-12">
+
+        <div class="col-lg-12 margin-top-5">
             <hr>
-            <div class="detals col-lg-12"><h4 class="text-left">Составляйте документы в своих интересах
-                    автоматически</h4>
-                <img class="col-lg-6 col-lg-push-6" src="assets/img/dogovori.png" alt="КП">
-                <div class="txt col-lg-4 col-lg-pull-6">
-                    <div class="kub">Редактор договоров и соглашений</div>
-                    <div class="kub">Советы по качественным формулировкам</div>
-                    <div class="kub">Не пропустите важные положения</div>
-                    <div class="kub">Отстаивайте свои интересы</div>
+            <h4 class="text-left bold">Автоматизм в управлении ресурсами с нашим
+                приложением</h4>
+            <div class="container col-lg-12">
+                <div class="container col-lg-6 ">
+
+                    <div class="container col-lg-12 pluses  padding-top-8">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2 ">Автоподбор оптимальных контрагентов</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Контроль за ресурсами предприятия</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Закупки включенные в систему бухгалтерии</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Не теряйте оптимальных поставщиков</div>
+                    </div>
+
+                </div>
+                <div class="padding-top-2 col-lg-6">
+                    <img src="assets/img/documents.png" width="500" height="325" alt="Юр.отдел"></div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-12 margin-top-5">
+            <hr>
+            <h4 class="text-right bold">Вся история взаимодействия с контрагентом на одной
+                странице!</h4>
+            <div class="container col-lg-12">
+                <div class="padding-top-2 col-lg-6">
+                    <img src="assets/img/kontragenti.png" width="500" height="325" alt="Контрагенты"></div>
+                <div class="container col-lg-6 ">
+
+                    <div class="container col-lg-12 pluses  padding-top-8">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2 ">Удобная панель взаимодействия</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Прогноз поведения</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Взаимоучёт количественных величин</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Система рейтинговой оценки контрагента</div>
+                    </div>
+
                 </div>
             </div>
         </div>
+
+
+        <div class="col-lg-12 margin-top-5">
+            <hr>
+            <h4 class="text-left bold">Составляйте документы в своих интересах
+                автоматически</h4>
+            <div class="container col-lg-12">
+                <div class="container col-lg-6 ">
+
+                    <div class="container col-lg-12 pluses  padding-top-8">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2 ">Удобный редактор договоров и соглашений</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Советы по качественным формулировкам</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Не пропустите важные положения</div>
+                    </div>
+
+                    <div class="container col-lg-12  pluses">
+                        <div class="col-lg-4 ">
+                            <div class="kub"><img class="padding-left-10" src="assets/img/galochka_white.png"
+                                                  alt="Галочка"></div>
+                        </div>
+                        <div class="col-lg-8 padding-top-2">Отстаивайте свои интересы</div>
+                    </div>
+
+                </div>
+                <div class="padding-top-2 col-lg-6">
+                    <img src="assets/img/dogovori.png" width="500" height="325" alt="Договоры"></div>
+            </div>
+        </div>
+
+
     </div>
+
+
 </div>
+
 
 <div class="col-lg-12 nerd-blc">
     <div class="container">

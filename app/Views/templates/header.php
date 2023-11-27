@@ -31,6 +31,11 @@
                         <a class="nav-item" href="/employers">Сотрудники</a>
                         <a class="nav-item" href="/404">Техника</a>
                         <a class="nav-item" href="/404">Контрагенты</a>
+                        <a class="nav-item" href="/404">Тендеры</a>
+                        <a class="nav-item" href="/404">Маркетинг</a>
+                        <a class="nav-item" href="/404">Юр.отдел</a>
+                        <a class="nav-item" href="/404">Бухгалтерия</a>
+
                     </nav>
                     <div>
                         <div class="white-text">
