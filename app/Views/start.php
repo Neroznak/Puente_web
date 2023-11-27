@@ -26,7 +26,7 @@
         <div class="container">
             <div class="lkkl">Облачная система контроля за строительной организацией
                 <a href="/home">
-                    <button class="btn btn-nero">Смотреть портал</button>
+                    <button class="btn-nero">Смотреть портал</button>
                 </a>
             </div>
         </div>
