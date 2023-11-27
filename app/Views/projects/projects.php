@@ -13,6 +13,10 @@
                                     <button class="add_project_button">
                                         Добавить новый объект
                                     </button></a>
+                                <a href="/archive_projects">
+                                    <button class="add_project_button">
+                                        Сданные работы
+                                    </button></a>
                             </div>
                         </div>
                     </div>
@@ -21,8 +25,8 @@
                 <div class="row">
                     <div class="half">
                         <div class="margin-table">
-                            <?php $total_prepare = 0; ?>
-                            <h3 class="text-center">Подготавливаются</h3>
+                            <h3 class="text-center">Подготавливаются, на сумму <?= esc($total_prepare) ?> руб.</h3>
+
                             <table>
                                 <thead>
                                 <tr>
@@ -40,20 +44,17 @@
                                         <td><a href="/project_page"><?= esc($project_item['project']); ?></a></td>
                                         <td><?= esc($project_item['date_start']); ?></td>
                                         <td><?= esc($project_item['date_finish']); ?></td>
-                                        <td><?= esc($project_item['total']);
-                                            $total_prepare += $project_item['total']; ?></td>
+                                        <td><?= esc($project_item['total']); ?></td>
                                     </tr>
                                 <?php endforeach ?>
                                 </tbody>
                             </table>
-                            <p class="bold"><?= esc($total_prepare); ?></p>
                         </div>
                     </div>
 
                     <div class="half">
                         <div class="margin-table">
-                            <?php $total_process = 0; ?>
-                            <h3 class="text-center">Выполняются</h3>
+                            <h3 class="text-center">Выполняются, на сумму   <?= esc($total_process) ?> руб.</h3>
                             <table>
                                 <thead>
                                 <tr>
@@ -71,20 +72,17 @@
                                         <td><?= esc($project_item['project']) ?></td>
                                         <td><?= esc($project_item['date_start']) ?></td>
                                         <td><?= esc($project_item['date_finish']) ?></td>
-                                        <td><?= esc($project_item['total']);
-                                            $total_process += $project_item['total'] ?></td>
+                                        <td><?= esc($project_item['total']); ?></td>
                                     </tr>
                                 <?php endforeach ?>
                                 </tbody>
                             </table>
-                            <p class="bold"><?= esc($total_process); ?></p>
                         </div>
                     </div>
 
                     <div class="half">
                         <div class="margin-table">
-                            <?php $total_completed = 0; ?>
-                            <h3 class="text-center">Сданы в оплату</h3>
+                            <h3 class="text-center">Сданы в оплату, на сумму <?= esc($total_completed) ?> руб.</h3>
                             <table>
                                 <thead>
                                 <tr>
@@ -102,13 +100,11 @@
                                         <td><?= esc($project_item['project']) ?></td>
                                         <td><?= esc($project_item['date_start']) ?></td>
                                         <td><?= esc($project_item['date_finish']) ?></td>
-                                        <td><?= esc($project_item['total']);
-                                            $total_completed += $project_item['total'] ?></td>
+                                        <td><?= esc($project_item['total']); ?></td>
                                     </tr>
                                 <?php endforeach ?>
                                 </tbody>
                             </table>
-                            <p class="bold"><?= esc($total_completed); ?></p>
                         </div>
                     </div>
 

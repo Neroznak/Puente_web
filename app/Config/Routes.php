@@ -15,6 +15,7 @@ use App\Controllers\Pages;
 $routes->get('/', 'Home::index');
 $routes->get('home', [Pages::class, 'view']);
 $routes->get('projects', [Projects::class, 'view']);
+$routes->get('archive_projects', [Projects::class, 'view_archive']);
 $routes->get('add_project', [Projects::class, 'view_add']);
 $routes->get('tasks', [Pages::class, 'view_tasks']);
 $routes->get('employers', [Pages::class, 'view_employers']);

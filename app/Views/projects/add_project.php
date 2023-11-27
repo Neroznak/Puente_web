@@ -1,4 +1,6 @@
 <!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
+<script src="<?= base_url('assets/js/script.js') ?>"></script>
+
 <section>
     <div class="container-fluid">
         <div class="row">
@@ -16,7 +18,8 @@
                                 <input type="submit" class="add_project_button" value="Сохранить шаблон">
                             </div>
                             <div class="col-auto">
-                                <input type="submit" class="add_project_button" value="Cоздать проект">
+                                <a href="/projects">
+                                <button class="add_project_button">Cоздать проект</button></a>
                             </div>
                         </div>
                     </div>
@@ -128,33 +131,37 @@
                         </form>
                     </div>
                     <div class="col-lg-9">
-                        <table class="otstup">
-                            <thead>
-                            <tr>
-                                <th class="table-start">№</th>
-                                <th>Наименование работы</th>
-                                <th>Ед.изм</th>
-                                <th>Объём</th>
-                                <th>Материал</th>
-                                <th>Трудозатраты</th>
-                                <th>Цена</th>
-                                <th class="table-stop">Стоимость</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td class="text-left">Снятие старого асфальтового покрытия вручную гидромолотом</td>
-                                <td>м2</td>
-                                <td>77</td>
-                                <td>0</td>
-                                <td>109,2</td>
-                                <td>109,2</td>
-                                <td>8408,40</td>
-                            </tr>
+                        <form id="myForm">
+                            <table class="otstup" id="myTable">
+                                <thead>
+                                <tr>
+                                    <th class="table-start">№</th>
+                                    <th>Наименование работы</th>
+                                    <th>Ед.изм</th>
+                                    <th>Объём</th>
+                                    <th>Материал</th>
+                                    <th>Трудозатраты</th>
+                                    <th>Цена</th>
+                                    <th class="table-stop">Стоимость</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="text-left">Снятие старого асфальтового покрытия вручную гидромолотом</td>
+                                    <td>м2</td>
+                                    <td>77</td>
+                                    <td>0</td>
+                                    <td>109,2</td>
+                                    <td>109,2</td>
+                                    <td>8408,40</td>
+                                </tr>
 
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
+                            <button type="submit">Сохранить</button>
+                            <button type="button" onclick="addRow()">Add Row</button>
+                        </form>
                     </div>
                 </div>
             </main>

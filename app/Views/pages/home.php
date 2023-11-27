@@ -15,9 +15,9 @@
                                 var myPieChart = new Chart(ctx, {
                                     type: 'pie',
                                     data: {
-                                        labels: ['Green', 'Orange', 'Blue', 'Red', 'Purple'],
+                                        labels: ['МЕТРО', 'АШАН', 'Корнер М-1', 'Детская клиника', 'Прочие'],
                                         datasets: [{
-                                            data: [20, 15, 25, 20, 20],
+                                            data: [45, 20, 20, 13, 2],
                                             backgroundColor: ['#4CAF50', '#FFA500', '#3498db', '#e74c3c', '#9b59b6']
                                         }]
                                     }
@@ -33,9 +33,9 @@
                                 var myPieChart = new Chart(ctx, {
                                     type: 'pie',
                                     data: {
-                                        labels: ['Green', 'Orange', 'Blue', 'Red', 'Purple'],
+                                        labels: ['Асфальтирование', 'Земляные работы', 'Монолитные работы', 'Инженерные сети', 'Прочие'],
                                         datasets: [{
-                                            data: [20, 15, 25, 20, 20],
+                                            data: [55, 15, 5, 23, 2],
                                             backgroundColor: ['#4CAF50', '#FFA500', '#3498db', '#e74c3c', '#9b59b6']
                                         }]
                                     }
@@ -57,7 +57,7 @@
                                         backgroundColor: 'rgba(75, 192, 192, 0.2)',
                                         borderColor: 'rgba(75, 192, 192, 1)',
                                         borderWidth: 1,
-                                        data: [10000, 15000, 20000, 18000, 25000, 30000, 28000, 32000, 27000, 22000, 18000, 20000],
+                                        data: [1000000, 1500000, 2000000, 1800000, 2500000, 3000000, 2800000, 3200000, 2700000, 2200000, 1800000, 2000000],
                                     }]
                                 };
 
