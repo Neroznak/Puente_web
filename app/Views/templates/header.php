@@ -38,7 +38,7 @@
 
                     </nav>
                     <div>
-                        <div class="white-text">
+                        <div class="white-text text-right">
                             <p>TRIUMVIRATE</p></div>
                     </div>
 <!--                </div>-->

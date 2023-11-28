@@ -72,7 +72,7 @@
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
-                                    <p>Ответственый </p></div>
+                                    <p>Ответственный </p></div>
                                 <div class="col-auto">
                                     <input type="text" placeholder="ввод" class="input-nero">
                                 </div>

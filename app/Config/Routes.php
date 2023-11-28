@@ -2,6 +2,7 @@
 
 
 use App\Controllers\AuthController;
+use App\Controllers\ProjectPage;
 use App\Controllers\Projects;
 use CodeIgniter\Router\RouteCollection;
 use App\Controllers\Pages;
@@ -20,7 +21,7 @@ $routes->get('add_project', [Projects::class, 'view_add']);
 $routes->get('tasks', [Pages::class, 'view_tasks']);
 $routes->get('employers', [Pages::class, 'view_employers']);
 $routes->get('add_project', [Projects::class, 'view']);
-$routes->get('project_page', [Projects::class, 'view_project']);
+$routes->get('/projects/(:any)', [ProjectPage::class,'index/$1']);
 $routes->get('404', [Pages::class, 'view_404']);
 $routes->get('start', [Pages::class, 'view']);
 $routes->get('login', [AuthController::class, 'login']);

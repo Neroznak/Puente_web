@@ -135,7 +135,8 @@ h3 {
 
 .margin-table {
     margin-top: 7%;
-    margin-left: 1%;
+    margin-left: 5%;
+    width: 90%;
 }
 .bold {
     font-size: 16px;
@@ -231,7 +232,11 @@ th, td {
     height: 300px;
 }
 
-
+.grey {
+    background-color: #F0F0F0;
+    border-radius: 15px;
+    display: flex;
+}
 
 .add_project_button {
     border: none;

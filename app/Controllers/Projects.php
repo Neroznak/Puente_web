@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 
+use App\Models\EstimatedModel;
 use App\Models\ProjectsModel;
 use CodeIgniter\Exceptions\PageNotFoundException;
 
@@ -71,26 +72,6 @@ class Projects extends BaseController
             'project_process' => $projects->getProjectProcess(),
             'project_completed' => $projects->getProjectCompleted(),
             'title' => 'Новый проект'];
-
-        return view('templates/header', $data)
-            . view('projects/' . $page, $data)
-            . view('templates/footer');
-    }
-
-    public function view_project($page = 'project_page')
-    {
-        if (!is_file(APPPATH . 'Views/projects/' . $page . '.php')) {
-            // Whoops, we don't have a page for that!
-            throw new PageNotFoundException($page);
-        }
-
-        $projects = model(ProjectsModel::class);
-
-        $data = [
-            'project_prepare' => $projects->getProjectPrepare(),
-            'project_process' => $projects->getProjectProcess(),
-            'project_completed' => $projects->getProjectCompleted(),
-            'title' => 'Рябиновая']; // из базы брать потом
 
         return view('templates/header', $data)
             . view('projects/' . $page, $data)

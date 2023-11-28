@@ -8,8 +8,11 @@
                     <div class="col-lg-11 margin">
                         <div class="row justify-content-between">
                             <div class="col-auto">
-                                <h1>Рябиновая</h1>
-                                <h3>Метро Кэш энд Керри</h3></div>
+                                <?php foreach ($project
+
+                                as $project_item): ?>
+                                <h1><?= esc($project_item['project']) ?></h1>
+                                <h3><?= esc($project_item['customer']) ?></h3></div>
                             <div class="col-auto">
                                 <input type="submit" class="project-button" value="КП">
                             </div>
@@ -43,118 +46,24 @@
                             </tr>
                             </thead>
                             <tbody>
+                            <?php $id = 1; ?>
                             <tr>
-                                <td>1</td>
-                                <td class="text-left">Снятие старого асфальтового покрытия вручную гидромолотом</td>
-                                <td>м2</td>
-                                <td>77</td>
-                                <td>0</td>
-                                <td>109,2</td>
-                                <td>109,2</td>
-                                <td>8408,40</td>
+                                <?php foreach ($estimated
+
+                                as $estimate_item): ?>
+                                <td><?= esc($id) ?></td>
+                                <?php $id++; ?>
+                                <td class="text-left"><?= esc($estimate_item['position']) ?></td>
+                                <td><?= esc($estimate_item['unit_of_measurement']) ?></td>
+                                <td><?= esc($estimate_item['volume']) ?></td>
+                                <td><?= esc($estimate_item['cost_materials']) ?></td>
+                                <td><?= esc($estimate_item['cost_work']) ?></td>
+                                <?php $price = $estimate_item['cost_materials'] + $estimate_item['cost_work'] ?>
+                                <td><?= esc($price) ?></td>
+                                <td><?= esc($estimate_item['volume'] * $price) ?></td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td class="text-left">Снятие старого асфальтового покрытия вручную гидромолотом</td>
-                                <td>м2</td>
-                                <td>77</td>
-                                <td>0</td>
-                                <td>109,2</td>
-                                <td>109,2</td>
-                                <td>8408,40</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td class="text-left">Снятие старого асфальтового покрытия вручную гидромолотом</td>
-                                <td>м2</td>
-                                <td>77</td>
-                                <td>0</td>
-                                <td>109,2</td>
-                                <td>109,2</td>
-                                <td>8408,40</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td class="text-left">Снятие старого асфальтового покрытия вручную гидромолотом</td>
-                                <td>м2</td>
-                                <td>77</td>
-                                <td>0</td>
-                                <td>109,2</td>
-                                <td>109,2</td>
-                                <td>8408,40</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td class="text-left">Снятие старого асфальтового покрытия вручную гидромолотом</td>
-                                <td>м2</td>
-                                <td>77</td>
-                                <td>0</td>
-                                <td>109,2</td>
-                                <td>109,2</td>
-                                <td>8408,40</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td class="text-left">Снятие старого асфальтового покрытия вручную гидромолотом</td>
-                                <td>м2</td>
-                                <td>77</td>
-                                <td>0</td>
-                                <td>109,2</td>
-                                <td>109,2</td>
-                                <td>8408,40</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td class="text-left">Резка существующего жб колодца в проектную отметку для установки
-                                    разгрузочной плиты
-                                </td>
-                                <td>шт</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>6 501,00</td>
-                                <td>6 501,00</td>
-                                <td>66 241,18</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td class="text-left">Снятие старого асфальтового покрытия вручную гидромолотом</td>
-                                <td>м2</td>
-                                <td>77</td>
-                                <td>0</td>
-                                <td>109,2</td>
-                                <td>109,2</td>
-                                <td>8408,40</td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td class="text-left">Снятие старого асфальтового покрытия вручную гидромолотом</td>
-                                <td>м2</td>
-                                <td>77</td>
-                                <td>0</td>
-                                <td>109,2</td>
-                                <td>109,2</td>
-                                <td>8408,40</td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td class="text-left">Снятие старого асфальтового покрытия вручную гидромолотом</td>
-                                <td>м2</td>
-                                <td>77</td>
-                                <td>0</td>
-                                <td>109,2</td>
-                                <td>109,2</td>
-                                <td>8408,40</td>
-                            </tr>
-                            <tr>
-                                <td>11</td>
-                                <td class="text-left">Снятие старого асфальтового покрытия вручную гидромолотом</td>
-                                <td>м2</td>
-                                <td>77</td>
-                                <td>0</td>
-                                <td>109,2</td>
-                                <td>109,2</td>
-                                <td>8408,40</td>
-                            </tr>
+                            <?php endforeach ?>
+
                             </tbody>
                         </table>
                     </div>
@@ -165,8 +74,8 @@
                 <div class="row">
                     <!-- ASIDE #1 -->
                     <aside class="col-sm-6 col-md-12">
-                        <h3 class="text-left">Ответственный: Софьин П.В.</h3>
-                        <h3 class="text-left">Статус: Выполняется</h3>
+                        <h3 class="text-left">Ответственный: <?= esc($project_item['response_person']) ?></h3>
+                        <h3 class="text-left">Статус: <?= esc($project_item['status']) ?></h3>
                         <table class="info-table">
                             <thead>
                             <tr>
@@ -184,6 +93,7 @@
                                 <td>Повышение производительности труда</td>
                             </tr>
                             </tbody>
+                            <?php endforeach ?>
                         </table>
                     </aside>
                     <!-- ASIDE #2 -->
