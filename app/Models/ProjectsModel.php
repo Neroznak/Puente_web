@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
-use mysqli;
+
 
 class ProjectsModel extends Model
 {
@@ -37,6 +37,11 @@ class ProjectsModel extends Model
     public function getProjectBySlug($slug)
     {
         return $this->where('slug', $slug)->findAll();
+    }
+
+    public function insert_project($data) {
+        $this->db->insert('projects', $data);
+        return $this->db->insert_id(); // Возвращает ID вставленной записи
     }
 
 

@@ -10,7 +10,8 @@
                             <div class="col-auto">
                                 <h1>Cотрудники</h1></div>
                             <div class="col-auto">
-                                <input type="submit" class="add_project_button" value="Добавить сотрудника">
+                                <a href="/add_employers"><button class="add_project_button">Добавить сотрудника</button></a>
+
                             </div>
                         </div>
                     </div>

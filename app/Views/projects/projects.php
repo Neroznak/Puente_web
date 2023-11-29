@@ -14,11 +14,11 @@
                                     Добавить новый объект
                                 </button>
                             </a>
-                            <a href="/archive_projects">
-                                <button class="add_project_button">
-                                    Сданные работы
-                                </button>
-                            </a>
+<!--                            <a href="/archive_projects">-->
+<!--                                <button class="add_project_button">-->
+<!--                                    Сданные работы-->
+<!--                                </button>-->
+<!--                            </a>-->
                         </div>
                     </div>
                 </div>

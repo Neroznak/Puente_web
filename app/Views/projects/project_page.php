@@ -24,9 +24,11 @@
         text-align: right;
         text-decoration: none;
     }
+
     .active a {
         color: yellow;
     }
+
     .form-nero {
         background-color: #F0F0F0;
         border-radius: 15px;
@@ -34,7 +36,6 @@
         margin-top: 7%;
         width: 400px;
     }
-
 
 
     .settings p {
@@ -49,17 +50,16 @@
         border-radius: 15px;
 
 
-
     }
 
     .otstup {
         margin-bottom: 5%;
         margin-left: 10%;
-        width: 80%  ;
+        width: 80%;
     }
 
     .pic {
-        width:100%;
+        width: 100%;
     }
 
     .errorText {
@@ -84,7 +84,6 @@
     }
 
 
-
     .form-add-emp {
         background-color: #F0F0F0;
         border-radius: 15px;
@@ -100,6 +99,7 @@
         border: none;
         padding-left: 7%;
     }
+
     .nav-item {
         margin-left: 2%;
     }
@@ -134,6 +134,7 @@
         margin-left: 5%;
         width: 90%;
     }
+
     .bold {
         font-size: 16px;
     }
@@ -158,6 +159,7 @@
     .full-page {
         width: 800px;
     }
+
     .employers-table {
         margin-left: 2%;
         margin-top: 3%;
@@ -216,6 +218,7 @@
     .table-start {
         border-top-left-radius: 15px;
     }
+
     .table-stop {
         border-top-right-radius: 15px;
     }
@@ -294,8 +297,6 @@
 </style>
 
 
-
-
 <section>
     <div class="container-fluid">
         <div class="row">
@@ -360,7 +361,20 @@
                                 <td><?= esc($estimate_item['volume'] * $price) ?></td>
                             </tr>
                             <?php endforeach ?>
+                            <tr>
 
+                                <th colspan="7" class="text-left">Итого</th>
+                                <th><?= esc($total_cost) ?></th>
+                            </tr>
+                            <tr>
+                                <th colspan="7" class="text-left">НДС 20%</th>
+                                <th><?= esc($total_cost * 0.2) ?></th>
+                            </tr>
+                            <tr>
+
+                                <th colspan="7" class="text-left">Итого с учётом НДС 20%</th>
+                                <th><?= esc($total_cost * 1.2) ?></th>
+                            </tr>
                             </tbody>
                         </table>
                     </div>

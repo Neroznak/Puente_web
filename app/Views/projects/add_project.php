@@ -1,6 +1,16 @@
 <!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
 <script src="<?= base_url('assets/js/script.js') ?>"></script>
 
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#submitBothForms').click(function () {
+            $('#project').submit();
+            $('#myForm').submit();
+        });
+    });
+</script>
+
 <section>
     <div class="container-fluid">
         <div class="row">
@@ -19,7 +29,7 @@
                             </div>
                             <div class="col-auto">
                                 <a href="/projects">
-                                <button class="add_project_button">Cоздать проект</button></a>
+                                <button type= "submit" form="submitBothForms" class="add_project_button">Cоздать проект</button></a>
                             </div>
                         </div>
                     </div>
@@ -27,108 +37,94 @@
 
                 <div class="row">
                     <div class="col-lg-3">
-                        <form class="form-nero">
+                        <form id="project" action="<?php echo base_url('App\Controllers\Projects/submit_form'); ?>" method="post" class="form-nero">
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
-                                    <p>Заказчик</p></div>
+                                    <label for="customer"><p>Заказчик</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
+                                    <input type="text" placeholder="ввод" name="customer" class="input-nero" required>
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
-                                    <p>Название проекта</p></div>
+                                    <label for="project"><p>Название проекта</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
+                                    <input type="text" placeholder="ввод" name='project ' class="input-nero" required>
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
-                                    <p>Адрес объекта</p></div>
+                                    <label for="address"><p>Адрес объекта</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
+                                    <input type="text" placeholder="ввод" name="address" class="input-nero">
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
-                                    <p>Структура</p></div>
+                                    <label for="date_finish"><p>Срок выполнения</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
+                                    <input type="text" placeholder="ввод" name= "date_finish" class="input-nero">
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
-                                    <p>Срок выполнения</p></div>
+                                    <label for="garanty"><p>Гарантии</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
+                                    <input type="text" placeholder="ввод" name="garanty" class="input-nero">
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
-                                    <p>Гарантийные</p></div>
+                                    <label for="response_person"><p>Ответственный</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
+                                    <input type="text" placeholder="ввод" name="response_person" class="input-nero">
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
-                                    <p>Ответственный </p></div>
+                                    <label for="vat"><p>НДС</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
-                                </div>
-                            </div>
-                            <div class="row justify-content-between">
-                                <div class="col-auto settings">
-                                    <p>НДС</p></div>
-                                <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
-                                </div>
-                            </div>
-                            <div class="row justify-content-between">
-                                <div class="col-auto settings">
-                                    <p>НДС в смете</p></div>
-                                <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
+                                    <input type="text" placeholder="ввод" name="vat" class="input-nero" required>
                                 </div>
                             </div>
                         </form>
-                        <form class="form-nero">
-                            <div class="row justify-content-between">
-                                <div class="col-auto settings">
-                                    <p>График</p></div>
-                                <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
-                                </div>
-                            </div>
-                            <div class="row justify-content-between">
-                                <div class="col-auto settings">
-                                    <p>Экономика</p></div>
-                                <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
-                                </div>
-                            </div>
-                            <div class="row justify-content-between">
-                                <div class="col-auto settings">
-                                    <p>Ресурсы</p></div>
-                                <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
-                                </div>
-                            </div>
-                            <div class="row justify-content-between">
-                                <div class="col-auto settings">
-                                    <p>Закупки</p></div>
-                                <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
-                                </div>
-                            </div>
-                            <div class="row justify-content-between">
-                                <div class="col-auto settings">
-                                    <p>Документы</p></div>
-                                <div class="col-auto">
-                                    <input type="text" placeholder="ввод" class="input-nero">
-                                </div>
-                            </div>
-                        </form>
+<!--                        <form class="form-nero">-->
+<!--                            <div class="row justify-content-between">-->
+<!--                                <div class="col-auto settings">-->
+<!--                                    <p>График</p></div>-->
+<!--                                <div class="col-auto">-->
+<!--                                    <input type="text" placeholder="ввод" class="input-nero">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="row justify-content-between">-->
+<!--                                <div class="col-auto settings">-->
+<!--                                    <p>Экономика</p></div>-->
+<!--                                <div class="col-auto">-->
+<!--                                    <input type="text" placeholder="ввод" class="input-nero">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="row justify-content-between">-->
+<!--                                <div class="col-auto settings">-->
+<!--                                    <p>Ресурсы</p></div>-->
+<!--                                <div class="col-auto">-->
+<!--                                    <input type="text" placeholder="ввод" class="input-nero">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="row justify-content-between">-->
+<!--                                <div class="col-auto settings">-->
+<!--                                    <p>Закупки</p></div>-->
+<!--                                <div class="col-auto">-->
+<!--                                    <input type="text" placeholder="ввод" class="input-nero">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="row justify-content-between">-->
+<!--                                <div class="col-auto settings">-->
+<!--                                    <p>Документы</p></div>-->
+<!--                                <div class="col-auto">-->
+<!--                                    <input type="text" placeholder="ввод" class="input-nero">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </form>-->
                     </div>
                     <div class="col-lg-9">
                         <form id="myForm">
@@ -147,19 +143,21 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td class="text-left">Снятие старого асфальтового покрытия вручную гидромолотом</td>
-                                    <td>м2</td>
-                                    <td>77</td>
-                                    <td>0</td>
-                                    <td>109,2</td>
-                                    <td>109,2</td>
-                                    <td>8408,40</td>
+                                    <?php $id=1 ?>
+                                    <td><?= esc($id) ?></td>
+                                    <?php $id++; ?>
+                                    <td class="text-left"><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
 
                                 </tbody>
                             </table>
-                            <button type="submit">Сохранить</button>
+                            <button type="submit" onclick="saveData()">Сохранить</button>
                             <button type="button" onclick="addRow()">Add Row</button>
                         </form>
                     </div>
