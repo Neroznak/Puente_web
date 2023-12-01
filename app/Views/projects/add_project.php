@@ -29,7 +29,7 @@
 <!--                            </div>-->
                             <div class="col-auto">
                                 <a href="projects">
-                                <button type= "submit" form="project"  class="add_project_button">Cоздать проект</button></a>
+                                <button type= "submit" form="submitBothForms"  class="add_project_button">Cоздать проект</button></a>
                             </div>
                         </div>
                     </div>

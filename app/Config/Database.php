@@ -26,7 +26,7 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => 'vh426.timeweb.ru',
+        'hostname'     => '185.114.247.170',
         'username'     => 'cy31930_puente',
         'password'     => 'Nero00900',
         'database'     => 'cy31930_puente',

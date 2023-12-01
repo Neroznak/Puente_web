@@ -387,6 +387,12 @@
                     <aside class="col-sm-6 col-md-12">
                         <h3 class="text-left">Ответственный: <?= esc($project_item['response_person']) ?></h3>
                         <h3 class="text-left">Статус: <?= esc($project_item['status']) ?></h3>
+                        <select id="selectOptions" name="options">
+                            <option value="option1">Подготавливается</option>
+                            <option value="option2">В работе</option>
+                            <option value="option3">В оплате</option>
+                            <option value="option4">Оплачено</option>
+                        </select>
                         <table class="info-table">
                             <thead>
                             <tr>
