@@ -400,7 +400,7 @@
         <div class="text-left col-lg-1 col-lg-push-3">
             <h1>Благодаря Puente вся компания говорит на одном языке.</h1>
             <h2>Dmitrii Neroznak</h2>
-            <h2> Генеральный директор Neroznak IT.</h2>
+<!--            <h2> Генеральный директор Neroznak IT.</h2>-->
         </div>
     </div>
 </div>

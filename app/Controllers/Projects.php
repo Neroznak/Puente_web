@@ -6,9 +6,11 @@ namespace App\Controllers;
 use App\Models\EstimatedModel;
 use App\Models\ProjectsModel;
 use CodeIgniter\Exceptions\PageNotFoundException;
+use DateTime;
 
 class Projects extends BaseController
 {
+
 
     public function index()
     {
@@ -52,7 +54,6 @@ class Projects extends BaseController
         $data['total_completed'] = $total_completed;
 
 
-
         return view('templates/header', $data)
             . view('projects/' . $page, $data)
             . view('templates/footer');
@@ -61,6 +62,7 @@ class Projects extends BaseController
 
     public function view_add($page = 'add_project')
     {
+        helper('form');
         if (!is_file(APPPATH . 'Views/projects/' . $page . '.php')) {
             // Whoops, we don't have a page for that!
             throw new PageNotFoundException($page);
@@ -97,32 +99,95 @@ class Projects extends BaseController
             . view('templates/footer');
     }
 
+    public function new()
+    {
+        helper('form');
 
-
-    public function submit_form() {
-//        $projects = model(ProjectsModel::class);
-        $this->load->model('ProjectsModel');
-
-        $data = array(
-            'customer' => $this->input->post('customer'),
-            'project' => $this->input->post('project'),
-            'address' => $this->input->post('address'),
-            'date_finish' => $this->input->post('date_finish'),
-            'garanty' => $this->input->post('garanty'),
-            'response_person' => $this->input->post('response_person'),
-            'vat' => $this->input->post('vat'),
-            // Добавьте другие поля в соответствии с вашей таблицей
-        );
-
-        $project_id = $this->ProjectsModel->insert_user($data);
-
-        if ($project_id) {
-            echo "Данные успешно добавлены в базу данных. Project ID: $project_id";
-        } else {
-            echo "Произошла ошибка при добавлении данных в базу данных.";
-        }
+        return view('templates/header', ['title' => 'Create a news item'])
+            . view('projects/add_project')
+            . view('templates/footer');
     }
 
+    /**
+     * @throws \ReflectionException
+     */
+    public function create()
+    {
+        helper('form');
+
+        // Checks whether the submitted data passed the validation rules.
+        if (!$this->validate([
+            'customer' => 'required|max_length[255]|min_length[3]',
+            'project' => 'required|max_length[5000]|min_length[10]',
+            'address' => 'required|max_length[5000]|min_length[10]',
+            'date_finish' => 'required|max_length[5000]|min_length[10]',
+            'garanty' => 'required|max_length[5000]|min_length[2]',
+            'response_person' => 'required|max_length[5000]|min_length[10]',
+            'vat' => 'required|max_length[5000]|min_length[2]',
+        ])) {
+            // The validation fails, so returns the form.
+            return $this->new();
+        }
+
+        // Gets the validated data.
+        $post = $this->validator->getValidated();
+
+        $model = model(ProjectsModel::class);
+
+        $currentDate = new DateTime();
+        $currentDateFormatted = $currentDate->format('Y-m-d');
+        $post['date_start'] = $currentDateFormatted;
+        $post['status']  = 'Подготавливается';
+        $post['0'] = 0;
+
+        $model->save([
+            'slug' => url_title($post['project'], '-', true),
+            'customer' => $post['customer'],
+            'project' => $post['project'],
+            'date_start' => $post['date_start'],
+            'date_finish' => $post['date_finish'],
+            'total' => $post['0'],
+            'status' => $post['status'],
+            'address' => $post['address'],
+            'garanty' => $post['garanty'],
+            'vat' => $post['vat'],
+            'response_person' => $post['response_person']]);
+
+
+        $projects = model(ProjectsModel::class);
+
+        $data = [
+            'project_prepare' => $projects->getProjectPrepare(),
+            'project_process' => $projects->getProjectProcess(),
+            'project_completed' => $projects->getProjectCompleted(),
+            'title' => 'Проекты'];
+
+
+        $total_prepare = 0;
+        $total_process = 0;
+        $total_completed = 0;
+
+        foreach ($data['project_prepare'] as $project_item) :
+            $total_prepare += $project_item['total'];
+        endforeach;
+
+        foreach ($data['project_process'] as $project_item) :
+            $total_process += $project_item['total'];
+        endforeach;
+
+        foreach ($data['project_completed'] as $project_item) :
+            $total_completed += $project_item['total'];
+        endforeach;
+
+        $data['total_prepare'] = $total_prepare;
+        $data['total_process'] = $total_process;
+        $data['total_completed'] = $total_completed;
+
+        $page = 'projects';
+        return view('templates/header', $data)
+            . view('projects/' . $page, $data)
+            . view('templates/footer');
+    }
 
 }
 

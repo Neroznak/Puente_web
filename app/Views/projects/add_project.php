@@ -21,70 +21,73 @@
                         <div class="row justify-content-between">
                             <div class="col-auto">
                                 <h1>Добавление проекта</h1></div>
+<!--                            <div class="col-auto">-->
+<!--                                <input type="submit" class="add_project_button" value="Шаблоны">-->
+<!--                            </div>-->
+<!--                            <div class="col-auto">-->
+<!--                                <input type="submit" class="add_project_button" value="Сохранить шаблон">-->
+<!--                            </div>-->
                             <div class="col-auto">
-                                <input type="submit" class="add_project_button" value="Шаблоны">
-                            </div>
-                            <div class="col-auto">
-                                <input type="submit" class="add_project_button" value="Сохранить шаблон">
-                            </div>
-                            <div class="col-auto">
-                                <a href="/projects">
-                                <button type= "submit" form="submitBothForms" class="add_project_button">Cоздать проект</button></a>
+                                <a href="projects">
+                                <button type= "submit" form="project"  class="add_project_button">Cоздать проект</button></a>
                             </div>
                         </div>
                     </div>
                 </div>
-
+<!--                --><?php //echo base_url('App\Controllers\Projects\submit_form'); ?>
                 <div class="row">
                     <div class="col-lg-3">
-                        <form id="project" action="<?php echo base_url('App\Controllers\Projects/submit_form'); ?>" method="post" class="form-nero">
+                        <?= session()->getFlashdata('error') ?>
+                        <?= validation_list_errors() ?>
+                        <form id="project" action="/projects" method="post" class="form-nero">
+                            <?= csrf_field() ?>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
                                     <label for="customer"><p>Заказчик</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" name="customer" class="input-nero" required>
+                                    <input type="text" placeholder="ввод" value="<?= set_value('title') ?>" name="customer" class="input-nero" required>
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
                                     <label for="project"><p>Название проекта</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" name='project ' class="input-nero" required>
+                                    <input type="text" placeholder="ввод" name='project' value="<?= set_value('title') ?>" class="input-nero" required>
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
                                     <label for="address"><p>Адрес объекта</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" name="address" class="input-nero">
+                                    <input type="text" placeholder="ввод" name="address" value="<?= set_value('title') ?>" class="input-nero">
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
                                     <label for="date_finish"><p>Срок выполнения</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" name= "date_finish" class="input-nero">
+                                    <input type="text" placeholder="ввод" name= "date_finish" value="<?= set_value('title') ?>" class="input-nero">
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
                                     <label for="garanty"><p>Гарантии</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" name="garanty" class="input-nero">
+                                    <input type="text" placeholder="ввод" name="garanty" value="<?= set_value('title') ?>" class="input-nero">
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
                                     <label for="response_person"><p>Ответственный</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" name="response_person" class="input-nero">
+                                    <input type="text" placeholder="ввод" name="response_person" value="<?= set_value('title') ?>" class="input-nero">
                                 </div>
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-auto settings">
                                     <label for="vat"><p>НДС</p></label></div>
                                 <div class="col-auto">
-                                    <input type="text" placeholder="ввод" name="vat" class="input-nero" required>
+                                    <input type="text" placeholder="ввод" name="vat" class="input-nero" value="<?= set_value('title') ?>" required>
                                 </div>
                             </div>
                         </form>
@@ -127,7 +130,7 @@
 <!--                        </form>-->
                     </div>
                     <div class="col-lg-9">
-                        <form id="myForm">
+                        <form id="myForm" action="<?php echo base_url('App\Controllers\Projects\create'); ?>" method="post" class="form-nero">
                             <table class="otstup" id="myTable">
                                 <thead>
                                 <tr>
@@ -157,7 +160,7 @@
 
                                 </tbody>
                             </table>
-                            <button type="submit" onclick="saveData()">Сохранить</button>
+<!--                            <button type="submit" onclick="saveData()">Сохранить</button>-->
                             <button type="button" onclick="addRow()">Add Row</button>
                         </form>
                     </div>

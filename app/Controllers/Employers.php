@@ -31,7 +31,7 @@ class Employers extends BaseController
 //            'project_prepare' => $projects->getProjectPrepare(),
 //            'project_process' => $projects->getProjectProcess(),
 //            'project_completed' => $projects->getProjectCompleted(),
-            'title' => 'Новый проект'];
+            'title' => 'Новый сотрудник'];
 
         return view('templates/header', $data)
             . view('employers/' . $page, $data)

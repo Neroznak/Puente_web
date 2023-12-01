@@ -57,7 +57,7 @@ class preload
                 '/system/Database/SQLSRV/',
                 // Not needed.
                 '/system/Database/Seeder.php',
-                '/system/Test/',
+                '/system/DataController/',
                 '/system/Language/',
                 '/system/CLI/',
                 '/system/Commands/',
@@ -92,7 +92,7 @@ class preload
             $fullTree  = new RecursiveIteratorIterator($directory);
             $phpFiles  = new RegexIterator(
                 $fullTree,
-                '/.+((?<!Test)+\.php$)/i',
+                '/.+((?<!DataController)+\.php$)/i',
                 RecursiveRegexIterator::GET_MATCH
             );
 

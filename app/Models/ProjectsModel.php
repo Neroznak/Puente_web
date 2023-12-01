@@ -9,8 +9,8 @@ class ProjectsModel extends Model
 {
     protected $table = 'projects';
 
-//    protected $primaryKey = 'id'; // Укажите первичный ключ, если он отличается от 'id'
-//    protected $allowedFields = ['customer', 'project', 'date_start', 'date_finish', 'total', 'status']; // Укажите разрешенные поля для вставки/обновления
+    protected $primaryKey = 'id'; // Укажите первичный ключ, если он отличается от 'id'
+    protected $allowedFields = ['slug','customer', 'project', 'date_start', 'date_finish', 'total', 'status', 'address','garanty','vat','response_person']; // Укажите разрешенные поля для вставки/обновления
 
 
     public function getProjectPrepare()
@@ -39,10 +39,13 @@ class ProjectsModel extends Model
         return $this->where('slug', $slug)->findAll();
     }
 
+
+
     public function insert_project($data) {
         $this->db->insert('projects', $data);
-        return $this->db->insert_id(); // Возвращает ID вставленной записи
+        return $this->db->insert_id();
     }
+
 
 
 
